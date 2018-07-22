@@ -1,0 +1,41 @@
+{
+  "name": "parcel-node",
+  "version": "1.0.0",
+  "description": "Parcel setup with React, ReactStrap, SASS, PostCSS and Airbnb ESLint through a Node express server containing an API endpoint example.",
+  "main": "src/index.js",
+  "dependencies": {
+    "bootstrap": "^4.1.2",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "reactstrap": "^6.3.0",
+    "parcel-bundler": "^1.9.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
+    "node-sass": "^4.9.2",
+    "postcss-modules": "^1.3.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "npx eslint --ext jsx,js src"
+  },
+  "author": "Rick Stevens",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rick-stevens/parcel-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rick-stevens/parcel-node/issues"
+  },
+  "homepage": "https://github.com/rick-stevens/parcel-node#readme"
+}

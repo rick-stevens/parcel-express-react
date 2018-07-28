@@ -10,5 +10,5 @@ app.use(bundler.middleware());
 app.listen(port);
 
 if (process.env.NODE_ENV !== 'production') {
-  bundler.on('bundled', () => console.log(`Open: http://localhost:${port}`));
+  bundler.on('bundled', () => console.log(`Serving from: http://localhost:${port}`));
 }

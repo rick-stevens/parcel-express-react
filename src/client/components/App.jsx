@@ -1,19 +1,16 @@
 import React from 'react';
-import createBrowserHistory from 'history/createBrowserHistory';
-import {
-  Router, Switch, Route, Redirect,
-} from 'react-router';
+import { Switch, Route } from 'react-router';
+import { Container } from 'reactstrap';
+import Nav from './Nav';
 import Home from './Home';
 import Example from './Example';
 
-const history = createBrowserHistory();
-
 export default () => (
-  <Router history={history}>
+  <Container>
+    <Nav />
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route exact path="/example" component={Example} />
-      <Redirect to="/" />
+      <Route path="/example" component={Example} />
     </Switch>
-  </Router>
+  </Container>
 );

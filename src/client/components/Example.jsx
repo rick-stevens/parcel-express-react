@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Container } from 'reactstrap';
-import Nav from './Nav';
 
 export default class Example extends Component {
   constructor(props) {
@@ -21,15 +19,14 @@ export default class Example extends Component {
     const { params } = this.state;
 
     return (
-      <Container>
-        <Nav />
+      <React.Fragment>
         <h1 className="display-4">
           Server result:
         </h1>
         <code>
           {JSON.stringify(params)}
         </code>
-      </Container>
+      </React.Fragment>
     );
   }
 }

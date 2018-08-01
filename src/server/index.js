@@ -1,9 +1,10 @@
 const Bundler = require('parcel-bundler');
+const path = require('path');
 const app = require('express')();
-const { handleMethod } = require('./server/api');
+const { handleMethod } = require('./api');
 
 const port = process.env.PORT || 1234;
-const bundler = new Bundler(`${__dirname}/client/index.html`);
+const bundler = new Bundler(path.join(__dirname, '../client/index.html'));
 
 app.get('/api/:method', handleMethod);
 app.use(bundler.middleware());

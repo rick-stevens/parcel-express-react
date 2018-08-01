@@ -26,7 +26,7 @@
     "postcss-modules": "^1.3.0"
   },
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node src/server/index.js",
     "lint": "npx eslint --ext js,jsx src"
   },
   "author": "Rick Stevens (http://rickstevens.nl/)",

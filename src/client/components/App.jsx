@@ -4,6 +4,7 @@ import { Container } from 'reactstrap';
 import Nav from './Nav';
 import Home from './Home';
 import Example from './Example';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default () => (
   <Container>

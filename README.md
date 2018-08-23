@@ -4,10 +4,20 @@ Parcel starter-kit with React, React Router, ReactStrap, PostCSS and Airbnb ESLi
 
 ## Install
 
+You'll need Node `>=10` (to support native import/export syntax).
+
 ```shell
 npm install
 ```
 
+## Run
+
+```shell
+npm start
+```
+
+Open http://localhost:1234.
+
 ## Deploy
 
-Just deploy the entire repo. `npm start` will take care of the Express server containing the production build when `process.env.NODE_ENV` equals `production`.
+Just deploy the entire repo to a Node web server environment, like Heroku. `npm start` will boot up Express, serving the production build (when `process.env.NODE_ENV` equals `production`).

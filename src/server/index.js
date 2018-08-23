@@ -1,6 +1,8 @@
 const Bundler = require('parcel-bundler');
 const path = require('path');
 const app = require('express')();
+
+// API example
 const { handleMethod } = require('./api');
 
 const port = process.env.PORT || 1234;

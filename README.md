@@ -1,22 +1,20 @@
 # parcel-node
 
-Parcel starter-kit with React, React Router, ReactStrap, PostCSS and Airbnb ESLint through a Node express server containing an API endpoint example.
+Parcel starter-kit with React, React Router, ReactStrap, PostCSS and Airbnb ESLint, through an Express server.
 
 ## Install
-
-You'll need Node `>=10` (to support native import/export syntax).
 
 ```shell
 npm install
 ```
 
-## Run
+## Develop
 
 ```shell
 npm start
 ```
 
-Open http://localhost:1234.
+Open http://localhost:1234. All files (except those in `/src/server`) will hot reload when edited.
 
 ## Deploy
 

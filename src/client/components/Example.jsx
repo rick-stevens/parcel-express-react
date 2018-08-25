@@ -4,28 +4,25 @@ import 'whatwg-fetch';
 export default class Example extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      params: null,
-    };
+    this.state = { result: null };
   }
 
   componentDidMount() {
-    fetch('/api/test')
+    fetch('/api/example')
       .then(res => res.json())
-      .then(params => this.setState({ params }));
+      .then(result => this.setState({ result }));
   }
 
   render() {
-    const { params } = this.state;
+    const { result } = this.state;
 
     return (
       <React.Fragment>
         <h1 className="display-4">
-          Server result:
+          Result:
         </h1>
         <code>
-          {JSON.stringify(params)}
+          {JSON.stringify(result)}
         </code>
       </React.Fragment>
     );

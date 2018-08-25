@@ -1,13 +1,11 @@
-const handleMethod = (req, res) => {
-  switch (req.params.method) {
-    case 'example':
-      setTimeout(() => res.send({ success: true }), 1000);
+const handleMethod = (req, res, next) => {
+  switch (true) {
+    case (req.method === 'GET' && req.params.method === 'example'):
+      setTimeout(() => res.send({ success: true }), 500);
       break;
 
     default:
-      res
-        .status(404)
-        .send({ error: 404 });
+      next();
       break;
   }
 };

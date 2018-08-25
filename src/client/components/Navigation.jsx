@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink as RouterNavLink } from 'react-router-dom';
 import { Nav, NavItem, NavLink } from 'reactstrap';
-import styles from './Nav.css';
+import styles from './Navigation.css';
 
 export default () => (
   <Nav>
@@ -11,7 +11,7 @@ export default () => (
       </NavLink>
     </NavItem>
     <NavItem>
-      <NavLink exact activeClassName={styles.active} tag={RouterNavLink} to="/example">
+      <NavLink exact activeClassName={styles.active} tag={RouterNavLink} to="/server-example">
         Server example
       </NavLink>
     </NavItem>

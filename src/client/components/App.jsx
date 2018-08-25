@@ -1,17 +1,19 @@
 import React from 'react';
 import { Switch, Route } from 'react-router';
 import { Container } from 'reactstrap';
-import Nav from './Nav';
+import Navigation from './Navigation';
 import Home from './Home';
-import Example from './Example';
+import ServerExample from './ServerExample';
+import Error from './Error';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default () => (
   <Container>
-    <Nav />
+    <Navigation />
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/example" component={Example} />
+      <Route path="/server-example" component={ServerExample} />
+      <Route component={Error} status={404} />
     </Switch>
   </Container>
 );

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
 
-export default class Example extends Component {
+export default class ServerExample extends Component {
   constructor(props) {
     super(props);
     this.state = { result: null };
@@ -19,11 +19,15 @@ export default class Example extends Component {
     return (
       <React.Fragment>
         <h1 className="display-4">
-          Result:
+          Server example
         </h1>
-        <code>
-          {JSON.stringify(result)}
-        </code>
+        <p>
+          Fetch result:
+          {' '}
+          <code>
+            {JSON.stringify(result)}
+          </code>
+        </p>
       </React.Fragment>
     );
   }

@@ -4,11 +4,11 @@ Parcel through Express, React starter-kit.
 
 ## Features
 
-* [Parcel](https://parceljs.org/) bundler through [Express](https://expressjs.com/).
-* [React](https://reactjs.org/) with React Router.
-* [Bootstrap](https://getbootstrap.com/) through [ReactStrap](https://reactstrap.github.io/).
-* [PostCSS](https://postcss.org/) with Autoprefixer and CSS Modules.
-* [ESLint](https://eslint.org/) extending [Airbnb](https://github.com/airbnb/javascript#readme).
+- [x] [Parcel](https://parceljs.org/) bundler through [Express](https://expressjs.com/).
+- [x] [React](https://reactjs.org/) with React Router.
+- [x] [Bootstrap](https://getbootstrap.com/) through [ReactStrap](https://reactstrap.github.io/).
+- [x] [PostCSS](https://postcss.org/) with Autoprefixer and CSS Modules.
+- [x] [ESLint](https://eslint.org/) extending [Airbnb](https://github.com/airbnb/javascript#readme).
 
 ## Install
 
@@ -22,7 +22,10 @@ npm install
 npm start
 ```
 
-Open http://localhost:1234. All files (except those in `/src/server`) will hot reload when edited.
+Open http://localhost:1234.
+
+- [x] All files in `/src/client` will hot reload when edited.
+- [x] All files in `/src/server` will cause a server restart when edited (requires manual refresh).
 
 ## Deploy
 

@@ -17,17 +17,21 @@
     "whatwg-fetch": "^2.0.4"
   },
   "devDependencies": {
-    "autoprefixer": "^9.0.1",
+    "autoprefixer": "^9.1.5",
     "babel-preset-react": "^6.24.1",
-    "eslint": "^5.4.0",
+    "eslint": "^5.5.0",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.10.0",
+    "if-env": "^1.0.4",
+    "nodemon": "^1.18.4",
     "postcss-modules": "^1.3.0"
   },
   "scripts": {
-    "start": "node src/server/index.js",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:dev": "nodemon --watch src/server src/server",
+    "start:prod": "node src/server",
     "lint": "eslint --ext js,jsx src"
   },
   "author": "Rick Stevens (http://rickstevens.nl/)",
